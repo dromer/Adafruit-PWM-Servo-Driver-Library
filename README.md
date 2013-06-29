@@ -1,5 +1,8 @@
 This is a library for our Adafruit 16-channel PWM & Servo driver
 
+This branch has been modified to work with TinyWireM.h and the attiny85 based Digispark
+
+
   Pick one up today in the adafruit shop!
   ------> http://www.adafruit.com/products/815
 

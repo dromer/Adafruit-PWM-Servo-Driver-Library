@@ -16,7 +16,7 @@
   BSD license, all text above must be included in any redistribution
  ****************************************************/
 
-#include <Wire.h>
+#include <TinyWireM.h>
 #include <Adafruit_PWMServoDriver.h>
 
 // called this way, it uses the default address 0x40
@@ -36,9 +36,9 @@ void setup() {
   pwm.setPWMFreq(1600);  // This is the maximum PWM frequency
     
   // save I2C bitrate
-  uint8_t twbrbackup = TWBR;
+  // uint8_t twbrbackup = TWBR;  // not needed?
   // must be changed after calling Wire.begin() (inside pwm.begin())
-  TWBR = 12; // upgrade to 400KHz!
+  // TWBR = 12; // upgrade to 400KHz!  // not needed?
     
 }
 
